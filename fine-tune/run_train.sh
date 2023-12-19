@@ -1,0 +1,1 @@
+python train.py --trainN 5 --N 5 --K 1 --Q 1 --model SimpleFSRE --encoder bert --hidden_size 768 --val_step 1000 --lr 1e-5 --pretrain_ckpt bert-base-uncased --batch_size 4 --weight_decay 1e-5
