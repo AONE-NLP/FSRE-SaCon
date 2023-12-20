@@ -42,7 +42,7 @@ bash run_test.sh
 ```
 @misc{daluo2023synergistic,
       title={Synergistic Anchored Contrastive Pre-training for Few-Shot Relation Extraction}, 
-      author={DaLuo and Yanglei Gan and Rui Hou and Run Lin and Qiao Liu and Yuxiang Cai and Wannian Gao},
+      author={Da Luo and Yanglei Gan and Rui Hou and Run Lin and Qiao Liu and Yuxiang Cai and Wannian Gao},
       year={2023},
       eprint={2312.12021},
       archivePrefix={arXiv},
