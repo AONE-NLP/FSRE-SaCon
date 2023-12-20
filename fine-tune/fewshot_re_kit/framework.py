@@ -343,19 +343,19 @@ class FewShotREFramework:
                 elif model_name == 'PAIR':
                     logits, pred = model(batch, N, K, Q * N + Q * na_rate)
                 
-                # if test:
-                #     test_result.append(pred.tolist()[0])
-                #     json.dump(test_result,open('data/' + model_name+ '/pred-' + str(N) + '-' + str(K) + '.json','w'))
-                #     # json.dump(test_result,open('data/' + model_name+ '/pubmed/pred-' + str(N) + '-' + str(K) + '.json','w'))
-
-                label = label.cuda()
-                right = model.accuracy(pred, label)
-                iter_right += self.item(right.data)
-                iter_sample += 1
-
-                sys.stdout.write(
-                    '[EVAL] step: {0:4} | accuracy: {1:3.2f}%'.format(it + 1, 100 * iter_right / iter_sample) + '\r')
-                sys.stdout.flush()
+                if test:
+                    test_result.append(pred.tolist()[0])
+                    json.dump(test_result,open('data/' + model_name+ '/pred-' + str(N) + '-' + str(K) + '.json','w'))
+                    # json.dump(test_result,open('data/' + model_name+ '/pubmed/pred-' + str(N) + '-' + str(K) + '.json','w'))
+                else:
+                    label = label.cuda()
+                    right = model.accuracy(pred, label)
+                    iter_right += self.item(right.data)
+                    iter_sample += 1
+    
+                    sys.stdout.write(
+                        '[EVAL] step: {0:4} | accuracy: {1:3.2f}%'.format(it + 1, 100 * iter_right / iter_sample) + '\r')
+                    sys.stdout.flush()
 
                     
                 # else:
