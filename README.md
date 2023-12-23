@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Dataset and code for paper [Synergistic Anchored Contrastive Pre-training for Few-Shot Relation Extraction](https://arxiv.org/abs/2312.12021), accepted at AAAI 2024.
+The Dataset and code for paper [Synergistic Anchored Contrastive Pre-training for Few-Shot Relation Extraction](https://arxiv.org/abs/2312.12021), accepted by AAAI 2024.
 
 ![1703063577738](images/1703063577738.png)
 
