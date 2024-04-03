@@ -58,8 +58,9 @@ class FewRelDataset(data.Dataset):
         for i, class_name in enumerate(target_classes):
             if self.ispubmed:
                 if class_name in self.pid2name.keys():
-                    name, _ = self.pid2name[class_name]
-                    rel_text, rel_text_mask = self.__getname__(name)
+                    # name, _ = self.pid2name[class_name]
+                    # rel_text, rel_text_mask = self.__getname__(name)
+                    rel_text, rel_text_mask = self.__getrel__(self.pid2name[class_name])
                 else:
                     rel_text, rel_text_mask = self.__getname__(class_name)
             else:
@@ -191,8 +192,9 @@ class FewRelTestDataset(data.Dataset):
             class_name = rel_set[idx]
             if self.ispubmed:
                 if class_name in self.pid2name.keys():
-                    name, _ = self.pid2name[class_name]
-                    rel_text, rel_text_mask = self.__getname__(name)
+                    # name, _ = self.pid2name[class_name]
+                    # rel_text, rel_text_mask = self.__getname__(name)
+                    rel_text, rel_text_mask = self.__getrel__(self.pid2name[class_name])
                 else:
                     rel_text, rel_text_mask = self.__getname__(class_name)
             else:
