@@ -40,13 +40,14 @@ bash run_test.sh
 ## Citation
 
 ```
-@misc{daluo2023synergistic,
-      title={Synergistic Anchored Contrastive Pre-training for Few-Shot Relation Extraction}, 
-      author={Da Luo and Yanglei Gan and Rui Hou and Run Lin and Qiao Liu and Yuxiang Cai and Wannian Gao},
-      year={2023},
-      eprint={2312.12021},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{luo2024synergistic,
+  title={Synergistic Anchored Contrastive Pre-training for Few-Shot Relation Extraction},
+  author={Luo, Da and Gan, Yanglei and Hou, Rui and Lin, Run and Liu, Qiao and Cai, Yuxiang and Gao, Wannian},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={17},
+  pages={18742--18750},
+  year={2024}
 }
 ```
 
