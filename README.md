@@ -43,7 +43,7 @@ bash run_test.sh
 @inproceedings{luo2024synergistic,
   title={Synergistic Anchored Contrastive Pre-training for Few-Shot Relation Extraction},
   author={Luo, Da and Gan, Yanglei and Hou, Rui and Lin, Run and Liu, Qiao and Cai, Yuxiang and Gao, Wannian},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  booktitle={Proceedings of the 38th AAAI Conference on Artificial Intelligence},
   volume={38},
   number={17},
   pages={18742--18750},
